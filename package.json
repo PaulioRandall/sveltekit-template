@@ -1,0 +1,26 @@
+{
+	"name": "template-sveltekit",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"fmt": "npx prettier --write --plugin-search-dir=. .",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"autoprefixer": "10.4.0",
+		"postcss": "8.4.4",
+		"prettier": "2.5.1",
+		"prettier-plugin-svelte": "2.5.1",
+		"svelte": "3.44.0",
+		"tailwindcss": "2.2.19"
+	},
+	"dependencies": {
+		"@sveltejs/adapter-static": "next",
+		"svelte-kit": "1.0.0"
+	}
+}

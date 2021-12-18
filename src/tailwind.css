@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.page-heading {
+		@apply mb-4 text-4xl font-bold;
+	}
+
+	.text-normal {
+		@apply mb-4 text-justify text-lg;
+	}
+
+	/* Standard link styling */
+	.text-link {
+		color: #0000ff;
+	}
+	.text-link:active {
+		color: #ff0000;
+	}
+	.text-link:visited {
+		color: #800080;
+	}
+	.text-link:hover {
+		text-decoration: underline;
+	}
+
+	/* For debugging element positions and sizes */
+	.debug-black-solid {
+		border: 2px SOLID black;
+		color: black;
+	}
+
+	.debug-red-dashed {
+		border: 2px DASHED red;
+		color: red;
+	}
+
+	.debug-blue-dotted {
+		border: 2px DOTTED blue;
+		color: blue;
+	}
+}
