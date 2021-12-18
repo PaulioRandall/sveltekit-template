@@ -16,7 +16,7 @@ Delete lock file (if present):
 rm package-lock.json
 ```
 
-Update project name in `package.json`
+Update project name in `package.json` to your project name
 
 #### Install & run
 
