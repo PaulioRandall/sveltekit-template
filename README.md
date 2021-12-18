@@ -6,38 +6,21 @@ A [Sveltekit](https://kit.svelte.dev/) project template with [Tailwind](https://
 
 #### Setup
 
-Clone the repo:
+Clone the repo and delete the lock file (if present):
 
 ```bash
 git clone https://github.com/PaulioRandall/template-sveltekit.git
-```
-
-Delete lock file (if present):
-
-```bash
 rm package-lock.json
 ```
 
-Update project name in `package.json` to your project name
+**Then update project name in `package.json` to whatever you want.**
 
-#### Install & run
+#### Install, build, & run
 
 First, install [Node v16](https://nodejs.org/en/download/). Then do the following in order:
 
-Install packages
-
 ```bash
 npm install
-```
-
-Build
-
-```bash
 npm run build
-```
-
-Run
-
-```bash
 npm run dev
 ```
