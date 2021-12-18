@@ -1,5 +1,7 @@
 # Template Sveltekit Project
 
+A Sveltekit project template with tailwind and prettier setup. Also includes a simple header and footer ready for rapid prototyping.
+
 ## Quick start
 
 #### Setup
