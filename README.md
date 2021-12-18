@@ -20,12 +20,7 @@ Update project name in `package.json` to your project name
 
 #### Install & run
 
-Install `nvm` then switch to node version 17:
-
-```bash
-nvm install 17
-nvm use 17
-```
+First, install Node v17. Then do the following in order:
 
 Install packages:
 
@@ -43,10 +38,4 @@ Run:
 
 ```bash
 npm run dev
-```
-
-Run tests:
-
-```bash
-npm run test
 ```
