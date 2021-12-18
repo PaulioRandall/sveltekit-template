@@ -1,6 +1,6 @@
 # Template Sveltekit Project
 
-A Sveltekit project template with tailwind and prettier setup. Also includes a simple header and footer ready for rapid prototyping.
+A [Sveltekit](https://kit.svelte.dev/) project template with [Tailwind](https://tailwindcss.com/) and [Prettier](https://prettier.io/) setup. Also includes a simple header and footer ready for rapid prototyping.
 
 ## Quick start
 
@@ -22,7 +22,7 @@ Update project name in `package.json` to your project name
 
 #### Install & run
 
-First, install Node v17. Then do the following in order:
+First, install [Node v16](https://nodejs.org/en/download/). Then do the following in order:
 
 Install packages
 
