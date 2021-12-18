@@ -7,7 +7,7 @@
 Clone the repo:
 
 ```bash
-git clone ....TODO
+git clone https://github.com/PaulioRandall/template-sveltekit.git
 ```
 
 Delete lock file (if present):
