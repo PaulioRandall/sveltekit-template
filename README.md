@@ -22,19 +22,19 @@ Update project name in `package.json` to your project name
 
 First, install Node v17. Then do the following in order:
 
-Install packages:
+Install packages
 
 ```bash
 npm install
 ```
 
-Build:
+Build
 
 ```bash
 npm run build
 ```
 
-Run:
+Run
 
 ```bash
 npm run dev
