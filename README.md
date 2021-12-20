@@ -24,7 +24,7 @@ npm run build
 npm run dev
 ```
 
-5. Enjoy at [localhost:3000]
+5. Enjoy at [localhost:3000](http://localhost:3000)
 
 ## Stuck or curious?
 
