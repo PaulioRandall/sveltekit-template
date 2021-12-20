@@ -4,28 +4,29 @@
 
 @layer utilities {
 	.page-heading {
-		@apply mb-4 text-4xl font-bold;
+		@apply mb-4 text-3xl font-bold;
 	}
 
 	.text-normal {
-		@apply mb-4 text-justify text-lg;
+		@apply mb-4 text-justify;
 	}
 
-	/* Standard link styling */
-	.text-link {
-		color: #0000ff;
+	/* Header & footer link styling */
+	.nav-link,
+	.nav-text {
+		color: #ddddff;
 	}
-	.text-link:active {
+	.nav-link:active {
 		color: #ff0000;
 	}
-	.text-link:visited {
+	.nav-link:visited {
 		color: #800080;
 	}
-	.text-link:hover {
+	.nav-link:hover {
 		text-decoration: underline;
 	}
 
-	/* For debugging element positions and sizes */
+	/* Visually debugging element positions, sizes, etc */
 	.debug-black-solid {
 		border: 2px SOLID black;
 		color: black;

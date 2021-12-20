@@ -1,7 +1,10 @@
 {
 	"name": "template-sveltekit",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"type": "module",
+	"engines": {
+		"node": ">=16.0.0 <17.0.0"
+	},
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
