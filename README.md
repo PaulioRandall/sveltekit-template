@@ -1,6 +1,6 @@
 # Template Sveltekit Project
 
-A [Sveltekit](https://kit.svelte.dev/) project template with [Tailwind](https://tailwindcss.com/) and [Prettier](https://prettier.io/) setup. Also includes a simple header and footer ready for rapid prototyping.
+A [Sveltekit](https://kit.svelte.dev/) project template with [Tailwind](https://tailwindcss.com/) and [Prettier](https://prettier.io/) setup. Also includes a few common components ready for rapid prototyping.
 
 ## New project
 
