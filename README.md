@@ -26,9 +26,9 @@ npm run dev
 
 5. Enjoy at [localhost:3000](http://localhost:3000)
 
-## Stuck or curious?
+## Stuck or curious
 
-#### Format code
+#### Format code?
 
 ```bash
 npm run fmt
@@ -36,7 +36,7 @@ npm run fmt
 
 Modify `.prettierrc.json` to customise styling.
 
-#### Permission denied
+#### Permission denied?
 
 ```bash
 sh: 1: ./scripts/build-env.sh: Permission denied
@@ -48,7 +48,7 @@ If you get a permissions error like the one above then you'll just need to give 
 chmod 744 ./scripts/build-env.sh
 ```
 
-#### Environment variables
+#### Environment variables?
 
 All environment variables must be prefixed with `VITE_` or they won't be accessible by Sveltekit.
 
