@@ -29,7 +29,6 @@
 		"tailwindcss": "3.0.7"
 	},
 	"dependencies": {
-		"@sveltejs/adapter-static": "next",
 		"svelte-kit": "1.0.0"
 	}
 }

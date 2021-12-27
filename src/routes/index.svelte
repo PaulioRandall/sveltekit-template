@@ -6,6 +6,7 @@
 	const sveltekit = { href: 'https://kit.svelte.dev/', text: 'Sveltekit' }
 	const tailwind = { href: 'https://tailwindcss.com/', text: 'Tailwind' }
 	const prettier = { href: 'https://prettier.io/', text: 'Prettier' }
+	const tutorial = { href: '/tutorial', text: 'tutorial page' }
 </script>
 
 <svelte:head>
@@ -21,15 +22,5 @@
 </p>
 
 <p class="text-normal">
-	I used the following tutorial as a guide in building this template. Worth a
-	watch if you're unfamiliar with Sveltekit.
+	Take a look at the <Hyperlink data="{tutorial}" />.
 </p>
-
-<iframe
-	width="560"
-	height="315"
-	src="https://www.youtube-nocookie.com/embed/uC6y59y4V4w"
-	title="YouTube video player"
-	frameborder="0"
-	allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-	allowfullscreen></iframe>
