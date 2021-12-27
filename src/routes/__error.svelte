@@ -1,10 +1,7 @@
 <script context="module">
 	export function load({ page, error, status }) {
 		return {
-			props: {
-				error,
-				status,
-			},
+			props: { error, status },
 		}
 	}
 </script>
@@ -14,9 +11,9 @@
 	export let error
 </script>
 
-<head>
+<svelte:head>
 	<title>{status}</title>
-</head>
+</svelte:head>
 
-<h1 class="page-heading">{status}</h1>
+<h1 class="page-heading">Error: {status}</h1>
 <p class="page-normal">{error.message}</p>

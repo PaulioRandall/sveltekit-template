@@ -1,8 +1,17 @@
 <script>
 	import '../tailwind.css'
-	import Header from '../components/Header.svelte'
-	import Footer from '../components/Footer.svelte'
+	import Header from '../organs/Header.svelte'
+	import Footer from '../organs/Footer.svelte'
+
+	let buildDate = import.meta.env.VITE_BUILD_DATE
+	if (!buildDate) {
+		buildDate = 'undefined'
+	}
 </script>
+
+<svelte:head>
+	<meta name="build-date" content="{buildDate}" />
+</svelte:head>
 
 <div class="flex flex-col min-h-screen items-center">
 	<Header />

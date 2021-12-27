@@ -1,6 +1,6 @@
-# Template Sveltekit Project
+# Sveltekit Template
 
-A [Sveltekit](https://kit.svelte.dev/) project template with [Tailwind](https://tailwindcss.com/) and [Prettier](https://prettier.io/) setup. Also includes a few common components ready for rapid prototyping.
+A [Sveltekit](https://kit.svelte.dev/) project template with [Tailwind](https://tailwindcss.com/) and [Prettier](https://prettier.io/) setup.
 
 ## New project
 
@@ -14,7 +14,7 @@ rm -f package-lock.json
 
 2. Update project name in `package.json` with your project name.
 
-3. Install [Node v16](https://nodejs.org/en/download/).
+3. Install [Node v14](https://nodejs.org/en/download/). Awaiting support from cloud providers to upgrade to Node v16.
 
 4. Install, build, and run:
 
@@ -35,3 +35,35 @@ npm run fmt
 ```
 
 Modify `.prettierrc.json` to customise styling.
+
+#### Permission denied
+
+```bash
+sh: 1: ./scripts/build-env.sh: Permission denied
+```
+
+If you get a permissions error like the one above then you'll just need to give yourself permissions to execute the file:
+
+```bash
+chmod 744 ./scripts/build-env.sh
+```
+
+#### Environment variables
+
+All environment variables must be prefixed with `VITE_` or they won't be accessible by Sveltekit.
+
+At the start of a build `./scripts/build-env.sh` is run that generates a `.env` file in the root of the project. This file is ignored by Git. Modify the script not the resultant file to add new variables.
+
+To rebuild this file without rebuilding the project use:
+
+```bash
+npm run prebuild
+```
+
+#### Build warnings
+
+Don't worry if you receive build warnings such as the one below. I get them too. As far as I've researched, they are safe to ignore: [stackoverflow](https://stackoverflow.com/questions/62810078/how-to-solve-npm-warn-optional-skipping-optional-dependency-fsevents1-2-13)
+
+```bash
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: ...
+```

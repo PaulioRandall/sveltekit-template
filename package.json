@@ -2,11 +2,17 @@
 	"name": "template-sveltekit",
 	"version": "0.1.0",
 	"type": "module",
+	"license": "MIT",
 	"engines": {
-		"node": ">=16.0.0 <17.0.0"
+		"node": ">=14.0.0 <15.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PaulioRandall/template-sveltekit.git"
 	},
 	"scripts": {
 		"dev": "svelte-kit dev",
+		"prebuild": "./scripts/build-env.sh",
 		"build": "svelte-kit build",
 		"fmt": "npx prettier --write --plugin-search-dir=. .",
 		"package": "svelte-kit package",
@@ -16,11 +22,11 @@
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "10.4.0",
-		"postcss": "8.4.4",
+		"postcss": "8.4.5",
 		"prettier": "2.5.1",
 		"prettier-plugin-svelte": "2.5.1",
-		"svelte": "3.44.0",
-		"tailwindcss": "2.2.19"
+		"svelte": "3.44.3",
+		"tailwindcss": "3.0.7"
 	},
 	"dependencies": {
 		"@sveltejs/adapter-static": "next",
