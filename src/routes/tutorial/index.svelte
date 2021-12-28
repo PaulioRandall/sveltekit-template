@@ -1,5 +1,5 @@
 <script>
-	import TutorialVideo from '../../organs/tutorial/TutorialVideo.svelte'
+	import TutorialVideo from './_TutorialVideo.svelte'
 
 	const title = 'Tutorial'
 </script>

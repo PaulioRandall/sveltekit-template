@@ -1,7 +1,7 @@
 <script>
 	export let data = {
 		href: '/you-forgot-to-define-the-hyperlink-details',
-		text: null,
+		text: 'YOU FORGOT TO DEFINE THE HYPERLINK DETAILS!',
 		asTab: false,
 	}
 

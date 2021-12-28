@@ -1,7 +1,7 @@
 <script>
 	import '../tailwind.css'
-	import Header from '../organs/Header.svelte'
-	import Footer from '../organs/Footer.svelte'
+	import Header from './_Header.svelte'
+	import Footer from './_Footer.svelte'
 
 	let buildDate = import.meta.env.VITE_BUILD_DATE
 	if (!buildDate) {
