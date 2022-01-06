@@ -11,10 +11,11 @@
 		"url": "https://github.com/PaulioRandall/template-sveltekit.git"
 	},
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"prebuild": "./scripts/build-env.sh",
-		"build": "svelte-kit build",
 		"fmt": "npx prettier --write --plugin-search-dir=. .",
+		"predev": "npm run fmt",
+		"dev": "svelte-kit dev",
+		"prebuild": "npm run fmt && ./scripts/build-env.sh",
+		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview"
 	},

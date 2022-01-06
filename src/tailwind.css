@@ -3,42 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-	.page-heading {
-		@apply mb-4 text-3xl font-bold;
-	}
-
-	.text-normal {
-		@apply mb-4 text-justify;
-	}
-
-	/* Header & footer link styling */
-	.nav-link,
-	.nav-text {
-		color: #ddddff;
-	}
-	.nav-link:active {
-		color: #ff0000;
-	}
-	.nav-link:visited {
-		color: #800080;
-	}
-	.nav-link:hover {
-		text-decoration: underline;
-	}
-
-	/* Visually debugging element positions, sizes, etc */
-	.debug-black {
-		border: 2px SOLID black;
-		color: black;
-	}
-
-	.debug-red {
-		border: 2px DASHED red;
-		color: red;
-	}
-
-	.debug-blue {
-		border: 2px DOTTED blue;
-		color: blue;
+	.tailwind-global-class-example {
+		@apply mt-4 mb-2 text-justify;
 	}
 }

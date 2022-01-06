@@ -1,0 +1,7 @@
+.core-page-heading {
+	@apply mb-4 text-3xl font-bold;
+}
+
+.core-text-normal {
+	@apply mb-4 text-justify;
+}

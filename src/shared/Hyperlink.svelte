@@ -1,8 +1,12 @@
 <script>
 	export let data = {
-		href: '/you-forgot-to-define-the-hyperlink-details',
-		text: 'YOU FORGOT TO DEFINE THE HYPERLINK DETAILS!',
+		href: undefined,
+		text: undefined,
 		asTab: false,
+	}
+
+	if (!data.href) {
+		throw new Error('You forgot to define the data for the hyperlink.')
 	}
 
 	if (!data.text) {

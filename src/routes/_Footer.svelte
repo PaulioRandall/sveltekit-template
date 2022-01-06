@@ -5,6 +5,10 @@
 			<a class="nav-link px-2" href="/tutorial">Tutorial</a>
 		</nav>
 
-		<div class="nav-text pb-2">© 2021 Bloody Stupid Johnson</div>
+		<div class="nav-link-text pb-2">© 2022 Bloody Stupid Johnson</div>
 	</div>
 </footer>
+
+<style>
+	@import './nav-link.css';
+</style>

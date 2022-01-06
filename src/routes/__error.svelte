@@ -15,5 +15,9 @@
 	<title>{status}</title>
 </svelte:head>
 
-<h1 class="page-heading">Error: {status}</h1>
-<p class="page-normal">{error.message}</p>
+<h1 class="core-page-heading">Error: {status}</h1>
+<p class="core-page-normal">{error.message}</p>
+
+<style>
+	@import '/src/shared/core.css';
+</style>

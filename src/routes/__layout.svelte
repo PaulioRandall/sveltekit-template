@@ -1,5 +1,4 @@
 <script>
-	import '../tailwind.css'
 	import Header from './_Header.svelte'
 	import Footer from './_Footer.svelte'
 
@@ -22,3 +21,7 @@
 
 	<Footer />
 </div>
+
+<style>
+	@import '/src/tailwind.css';
+</style>

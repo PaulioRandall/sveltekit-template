@@ -1,0 +1,13 @@
+.nav-link,
+.nav-link-text {
+	color: #ddddff;
+}
+.nav-link:active {
+	color: #ff0000;
+}
+.nav-link:visited {
+	color: #800080;
+}
+.nav-link:hover {
+	text-decoration: underline;
+}
