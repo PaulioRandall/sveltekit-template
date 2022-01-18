@@ -18,5 +18,5 @@
 <TutorialVideo youtubeId="uC6y59y4V4w" />
 
 <style>
-	@import '/src/shared/core.css';
+	@import '/src/shared/css/core.css';
 </style>

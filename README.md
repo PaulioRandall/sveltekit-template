@@ -19,7 +19,7 @@ rm -f package-lock.json
 4. Install, build, and run:
 
 ```bash
-npm install
+npm i
 npm run build
 npm run dev
 ```

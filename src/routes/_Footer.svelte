@@ -10,5 +10,5 @@
 </footer>
 
 <style>
-	@import './nav-link.css';
+	@import '/src/shared/css/nav-link.css';
 </style>

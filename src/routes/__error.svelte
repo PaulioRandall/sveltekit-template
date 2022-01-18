@@ -19,5 +19,5 @@
 <p class="core-page-normal">{error.message}</p>
 
 <style>
-	@import '/src/shared/core.css';
+	@import '/src/shared/css/core.css';
 </style>
