@@ -1,5 +1,5 @@
 <script context="module">
-	export function load({ page, error, status }) {
+	export function load({ error, status }) {
 		return {
 			props: { error, status },
 		}
@@ -15,9 +15,9 @@
 	<title>{status}</title>
 </svelte:head>
 
-<h1 class="core-page-heading">Error: {status}</h1>
-<p class="core-page-normal">{error.message}</p>
+<h1 class="base-page-heading">Error: {status}</h1>
+<p class="base-page-normal">{error.message}</p>
 
 <style>
-	@import '/src/shared/css/core.css';
+	@import '/src/shared/css/base.css';
 </style>

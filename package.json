@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/PaulioRandall/template-sveltekit.git"
+		"url": "https://github.com/PaulioRandall/sveltekit-template.git"
 	},
 	"scripts": {
 		"fmt": "npx prettier --write --plugin-search-dir=. .",

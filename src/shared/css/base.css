@@ -1,0 +1,21 @@
+.base-page-heading {
+	@apply mb-4 text-3xl font-bold;
+}
+
+.base-text-normal {
+	@apply mb-4 text-justify;
+}
+
+.base-nav-link,
+.base-nav-link-text {
+	color: #ddddff;
+}
+.base-nav-link:active {
+	color: #ff0000;
+}
+.base-nav-link:visited {
+	color: #800080;
+}
+.base-nav-link:hover {
+	text-decoration: underline;
+}

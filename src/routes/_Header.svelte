@@ -1,6 +1,6 @@
 <header class="header w-full">
 	<div class="bg-gray-900 py-2">
-		<a class="nav-link px-2" href="/">
+		<a class="base-nav-link px-2" href="/">
 			<img
 				class="float-left py-1 pl-2"
 				width="24"
@@ -13,5 +13,5 @@
 </header>
 
 <style>
-	@import '/src/shared/css/nav-link.css';
+	@import '/src/shared/css/base.css';
 </style>

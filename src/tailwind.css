@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-	.tailwind-global-class-example {
+	.global-class-example {
 		@apply mt-4 mb-2 text-justify;
 	}
 }

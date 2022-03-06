@@ -1,12 +1,12 @@
-<!-- A bit excessive but needed a reason to add a js import -->
 <script>
+	// A bit excessive but needed a reason to add a js import
 	import { isNotObject } from '/src/shared/js/types.js'
 
-	export let to = {
+	export let to /*{
 		href: undefined,
 		text: undefined,
 		asTab: false,
-	}
+	}*/
 
 	const missing = (v) => !v
 

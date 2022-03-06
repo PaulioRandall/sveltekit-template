@@ -13,18 +13,18 @@
 	<title>{title}</title>
 </svelte:head>
 
-<h1 class="core-page-heading">{title}</h1>
+<h1 class="base-page-heading">{title}</h1>
 
-<p class="core-text-normal">
+<p class="base-text-normal">
 	A <Hyperlink to="{sveltekit}" /> template with <Hyperlink to="{tailwind}" /> and
 	<Hyperlink to="{prettier}" /> setup. Also includes an easy to edit header and footer
 	for decoration when rapid prototyping.
 </p>
 
-<p class="core-text-normal">
+<p class="base-text-normal">
 	Take a look at the <Hyperlink to="{tutorialPage}" />.
 </p>
 
 <style>
-	@import '/src/shared/css/core.css';
+	@import '/src/shared/css/base.css';
 </style>
