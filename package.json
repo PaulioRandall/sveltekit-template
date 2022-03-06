@@ -17,17 +17,17 @@
 		"prebuild": "npm run fmt && ./scripts/build-env.sh",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
-		"preview": "svelte-kit preview"
+		"preview": "npm run build && svelte-kit preview"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "10.4.2",
-		"postcss": "8.4.5",
+		"postcss": "8.4.7",
 		"prettier": "2.5.1",
-		"prettier-plugin-svelte": "2.5.1",
-		"svelte": "3.46.2",
-		"tailwindcss": "3.0.15"
+		"prettier-plugin-svelte": "2.6.0",
+		"svelte": "3.46.4",
+		"tailwindcss": "3.0.23"
 	},
 	"dependencies": {
 		"svelte-kit": "1.0.0"
