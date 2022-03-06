@@ -7,6 +7,8 @@
 </script>
 
 <script>
+	import Body from '../shared/svelte/page/Body.svelte'
+
 	export let status
 	export let error
 </script>
@@ -15,8 +17,10 @@
 	<title>{status}</title>
 </svelte:head>
 
-<h1 class="base-page-heading">Error: {status}</h1>
-<p class="base-page-normal">{error.message}</p>
+<Body slim>
+	<h1 class="base-page-heading">Error: {status}</h1>
+	<p class="base-page-normal">{error.message}</p>
+</Body>
 
 <style>
 	@import '/src/shared/css/base.css';

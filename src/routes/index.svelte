@@ -1,7 +1,8 @@
 <script>
-	import Hyperlink from '../shared/svelte/Hyperlink.svelte'
+	import Body from '/src/shared/svelte/page/Body.svelte'
+	import Hyperlink from '/src/shared/svelte/Hyperlink.svelte'
 
-	const title = 'Welcome to this Sveltekit Template'
+	const title = 'A Sveltekit Template'
 
 	const sveltekit = { href: 'https://kit.svelte.dev/', text: 'Sveltekit' }
 	const tailwind = { href: 'https://tailwindcss.com/', text: 'Tailwind' }
@@ -13,17 +14,20 @@
 	<title>{title}</title>
 </svelte:head>
 
-<h1 class="base-page-heading">{title}</h1>
+<Body>
+	<h1 class="base-page-heading">{title}</h1>
 
-<p class="base-text-normal">
-	A <Hyperlink to="{sveltekit}" /> template with <Hyperlink to="{tailwind}" /> and
-	<Hyperlink to="{prettier}" /> setup. Also includes an easy to edit header and footer
-	for decoration when rapid prototyping.
-</p>
+	<p class="base-text-normal">
+		A <Hyperlink to="{sveltekit}" /> template with <Hyperlink to="{tailwind}" />
+		and
+		<Hyperlink to="{prettier}" /> setup. Also includes an easy to edit header and
+		footer for decoration when rapid prototyping.
+	</p>
 
-<p class="base-text-normal">
-	Take a look at the <Hyperlink to="{tutorialPage}" />.
-</p>
+	<p class="base-text-normal">
+		Take a look at the <Hyperlink to="{tutorialPage}" />.
+	</p>
+</Body>
 
 <style>
 	@import '/src/shared/css/base.css';
