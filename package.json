@@ -27,7 +27,7 @@
 		"prettier": "2.5.1",
 		"prettier-plugin-svelte": "2.6.0",
 		"svelte": "3.46.4",
-		"tailwindcss": "3.0.23"
+		"tailwindcss": "3.0.22"
 	},
 	"dependencies": {
 		"svelte-kit": "1.0.0"
