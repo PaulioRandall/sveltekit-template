@@ -5,8 +5,8 @@
 	const upTriangle = '&#9650;'
 
 	const bloodyStupidJohnson = {
-		href: "https://wiki.lspace.org/Bergholt_Stuttley_Johnson",
-		text: "© 2022 Bloody Stupid Johnson",
+		href: 'https://wiki.lspace.org/Bergholt_Stuttley_Johnson',
+		text: '© 2022 Bloody Stupid Johnson',
 	}
 </script>
 
@@ -16,7 +16,7 @@
 		<NavLink href="/">Home</NavLink>
 		<NavLink href="/tutorial">Tutorial</NavLink>
 	</nav>
-	<Hyperlink classes="white-link" to={bloodyStupidJohnson}/>
+	<Hyperlink classes="white-link" to="{bloodyStupidJohnson}" />
 </footer>
 
 <style>

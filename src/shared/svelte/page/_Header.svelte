@@ -1,55 +1,13 @@
 <script>
 	import NavLink from './_NavLink.svelte'
+	import Breadcrumbs from './_Breadcrumbs.svelte'
 	import { page } from '$app/stores'
 
 	const downTriangle = '&#9660;'
-
-	const parentOf = (path) => {
-		const i = path.lastIndexOf('/')
-		if (i == -1) {
-			return ''
-		}
-
-		return path.slice(0, i)
-	}
-
-	const newSegment = (path) => {
-		let text = 'Home'
-		if (path != '/') {
-			text = path.slice(1, path.length)
-		}
-
-		return {
-			text: text,
-			path: path,
-		}
-	}
-
-	const splitPathIntoSegments = (path) => {
-		const segments = []
-
-		for (; path && path != '/'; path = parentOf(path)) {
-			segments.unshift(newSegment(path))
-		}
-
-		segments.unshift(newSegment('/'))
-		return segments
-	}
-
-	$: segments = splitPathIntoSegments($page.url.pathname)
 </script>
 
 <div class="header">
-	<span class="breadcrumbs">
-		{#each segments as segment, i}
-			{#if i != 0}
-				<span class="direction">&gt;</span>
-			{/if}
-			<NavLink shrink href="{segment.path}">
-				{segment.text}
-			</NavLink>
-		{/each}
-	</span>
+	<Breadcrumbs />
 
 	<span class="jump-to-footer">
 		<NavLink scroll="footer">
@@ -67,23 +25,6 @@
 		background-color: var(--dark-gray);
 	}
 
-	.breadcrumbs {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		align-items: center;
-
-		color: white;
-		font-style: italic;
-		user-select: none;
-	}
-
-	.direction {
-		transition: 0.8s ease;
-		transform: rotate(90deg);
-		line-height: 0.2rem;
-	}
-
 	.jump-to-footer {
 		margin: auto auto;
 	}
@@ -91,15 +32,6 @@
 	@media only screen and (min-width: 600px) {
 		.header {
 			grid-template-columns: 1fr auto;
-		}
-
-		.breadcrumbs {
-			justify-self: start;
-			flex-direction: row;
-		}
-
-		.direction {
-			transform: rotate(0deg);
 		}
 
 		.jump-to-footer {

@@ -3,7 +3,7 @@
 }
 
 a:link {
-	color: #0000EE;
+	color: #0000ee;
 	cursor: pointer;
 }
 
@@ -12,12 +12,12 @@ a:hover {
 }
 
 a:link:active {
-	color: #FF0000;
+	color: #ff0000;
 }
 
 .default-page-heading {
 	margin-bottom: 1rem;
-	
+
 	font-size: 2rem;
 	font-weight: bold;
 }

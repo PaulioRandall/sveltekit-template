@@ -5,7 +5,6 @@
 	const title = 'A Sveltekit Template'
 
 	const sveltekit = { href: 'https://kit.svelte.dev/', text: 'Sveltekit' }
-	const tailwind = { href: 'https://tailwindcss.com/', text: 'Tailwind' }
 	const prettier = { href: 'https://prettier.io/', text: 'Prettier' }
 	const tutorialPage = { href: '/tutorial', text: 'tutorial page' }
 </script>
@@ -14,10 +13,9 @@
 	<h1 class="default-page-heading">{title}</h1>
 
 	<p class="default-text">
-		A <Hyperlink to="{sveltekit}" /> template with <Hyperlink to="{tailwind}" />
-		and
-		<Hyperlink to="{prettier}" /> setup. Also includes an easy to edit header and
-		footer for decoration when rapid prototyping.
+		A <Hyperlink to="{sveltekit}" /> template with <Hyperlink to="{prettier}" />
+		setup. Also includes an easy to edit header and footer for decoration when rapid
+		prototyping.
 	</p>
 
 	<p class="default-text">

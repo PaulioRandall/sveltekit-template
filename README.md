@@ -1,14 +1,14 @@
 # Sveltekit Template
 
-A [Sveltekit](https://kit.svelte.dev/) project template with [Tailwind](https://tailwindcss.com/) and [Prettier](https://prettier.io/) setup.
+A [Sveltekit](https://kit.svelte.dev/) project template with [Prettier](https://prettier.io/) setup.
 
 ## New project
 
 1. Clone the repo and delete the lock file (if present):
 
 ```bash
-git clone https://github.com/PaulioRandall/template-sveltekit.git
-cd template-sveltekit
+git clone https://github.com/PaulioRandall/sveltekit-template.git
+cd sveltekit-template
 rm -f package-lock.json
 ```
 
@@ -35,6 +35,12 @@ npm run fmt
 ```
 
 Modify `.prettierrc.json` to customise styling.
+
+#### Delete build directory?
+
+```bash
+npm run clean
+```
 
 #### Permission denied?
 

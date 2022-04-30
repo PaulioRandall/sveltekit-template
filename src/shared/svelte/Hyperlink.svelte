@@ -23,11 +23,15 @@
 </script>
 
 {#if tab}
-	<a class={classes} href="{to.href}" target="_blank" rel="noopener noreferrer">
+	<a
+		class="{classes}"
+		href="{to.href}"
+		target="_blank"
+		rel="noopener noreferrer">
 		{to.text}
 	</a>
 {:else}
-	<a class={classes} href="{to.href}">
+	<a class="{classes}" href="{to.href}">
 		{to.text}
 	</a>
 {/if}
