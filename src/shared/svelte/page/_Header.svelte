@@ -14,7 +14,7 @@
 	}
 
 	const newSegment = (path) => {
-		let text = 'Sveltekit Template'
+		let text = 'Home'
 		if (path != '/') {
 			text = path.slice(1, path.length)
 		}
@@ -45,7 +45,7 @@
 			{#if i != 0}
 				<span class="direction">&gt;</span>
 			{/if}
-			<NavLink href="{segment.path}" shrink>
+			<NavLink shrink href="{segment.path}">
 				{segment.text}
 			</NavLink>
 		{/each}
@@ -64,7 +64,7 @@
 		grid-template-columns: 1fr;
 
 		width: 100%;
-		@apply bg-gray-900;
+		background-color: var(--dark-gray);
 	}
 
 	.breadcrumbs {

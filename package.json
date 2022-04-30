@@ -11,6 +11,7 @@
 		"url": "https://github.com/PaulioRandall/sveltekit-template.git"
 	},
 	"scripts": {
+		"clean": "rm -rf .svelte-kit",
 		"fmt": "npx prettier --write --plugin-search-dir=. .",
 		"predev": "npm run fmt",
 		"dev": "svelte-kit dev",
@@ -22,12 +23,9 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"autoprefixer": "10.4.2",
-		"postcss": "8.4.7",
 		"prettier": "2.5.1",
 		"prettier-plugin-svelte": "2.6.0",
-		"svelte": "3.46.4",
-		"tailwindcss": "3.0.22"
+		"svelte": "3.46.4"
 	},
 	"dependencies": {
 		"svelte-kit": "1.0.0"

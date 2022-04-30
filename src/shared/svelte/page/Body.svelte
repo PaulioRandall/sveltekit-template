@@ -2,6 +2,8 @@
 	import Header from './_Header.svelte'
 	import Footer from './_Footer.svelte'
 
+	export let title = null
+
 	export let outer = '' // Classes
 	export let inner = '' // Classes
 
@@ -22,7 +24,18 @@
 	export let pad1 = !nopad && !pad2 && !pad3 && !pad4
 
 	export let focus = false
+
+	const buildDate = import.meta.env.VITE_BUILD_DATE
 </script>
+
+<svelte:head>
+	{#if title}
+		<title>{title}</title>
+	{/if}
+	{#if buildDate}
+		<meta name="build-date" content="{buildDate}" />
+	{/if}
+</svelte:head>
 
 <div class="page-layout">
 	<Header />

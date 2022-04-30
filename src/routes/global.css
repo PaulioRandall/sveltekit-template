@@ -1,0 +1,28 @@
+:root {
+	--dark-gray: #181818;
+}
+
+a:link {
+	color: #0000EE;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:link:active {
+	color: #FF0000;
+}
+
+.default-page-heading {
+	margin-bottom: 1rem;
+	
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.default-text {
+	margin-bottom: 1rem;
+	text-align: justify;
+}

@@ -10,25 +10,17 @@
 	const tutorialPage = { href: '/tutorial', text: 'tutorial page' }
 </script>
 
-<svelte:head>
-	<title>{title}</title>
-</svelte:head>
+<Body title="{title}">
+	<h1 class="default-page-heading">{title}</h1>
 
-<Body>
-	<h1 class="base-page-heading">{title}</h1>
-
-	<p class="base-text-normal">
+	<p class="default-text">
 		A <Hyperlink to="{sveltekit}" /> template with <Hyperlink to="{tailwind}" />
 		and
 		<Hyperlink to="{prettier}" /> setup. Also includes an easy to edit header and
 		footer for decoration when rapid prototyping.
 	</p>
 
-	<p class="base-text-normal">
+	<p class="default-text">
 		Take a look at the <Hyperlink to="{tutorialPage}" />.
 	</p>
 </Body>
-
-<style>
-	@import '/src/shared/css/base.css';
-</style>

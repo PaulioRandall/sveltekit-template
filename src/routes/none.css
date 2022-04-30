@@ -1,0 +1,416 @@
+a:link {
+	color: black;
+	text-decoration: none;
+	cursor: default;
+}
+
+a:visited {
+	color: none;
+	text-decoration: none;
+	cursor: none;
+}
+
+a:link:active {
+	color: none;
+}
+
+a:visited:active {
+	color: none;
+}
+
+abbr {
+}
+
+address {
+	font-style: none;
+}
+
+area {
+}
+
+article {
+}
+
+aside {
+}
+
+audio {
+}
+
+b {
+}
+
+base {
+}
+
+bdi {
+}
+
+bdo {
+}
+
+blockquote {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}
+
+br {
+}
+
+button {
+}
+
+canvas {
+}
+
+caption {
+	display: block;
+	text-align: left;
+}
+
+cite {
+	font-style: none;
+}
+
+code {
+}
+
+col {
+}
+
+colgroup {
+}
+
+datalist {
+}
+
+dd {
+	margin: 0;
+}
+
+del {
+	text-decoration: none;
+}
+
+details {
+}
+
+dfn {
+	font-style: none;
+}
+
+dialog {
+}
+
+div {
+}
+
+dl {
+	margin: 0;
+}
+
+dt {
+}
+
+em {
+}
+
+fieldset {
+	margin: 0;
+	padding: none;
+	border: none;
+}
+
+figcaption {
+}
+
+figure {
+	margin: 0;
+}
+
+footer {
+}
+
+form {
+	margin: 0;
+}
+
+h1 {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: normal;
+}
+
+h5 {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: normal;
+}
+
+h6 {
+	font-size: 1rem;
+	margin: 0;
+	font-weight: normal;
+}
+
+head {
+}
+
+header {
+}
+
+hr {
+	margin: 0;
+	border-style: none;
+	border-width: 1px;
+	border: none;
+}
+
+html {
+}
+
+i {
+}
+
+iframe {
+}
+
+img {
+	display: block;
+}
+
+input {
+}
+
+ins {
+	text-decoration: none;
+}
+
+kbd {
+}
+
+label {
+}
+
+legend {
+	padding: 0;
+}
+
+li {
+	display: block;
+}
+
+link {
+}
+
+main {
+}
+
+map {
+	display: block;
+}
+
+mark {
+	background-color: none;
+}
+
+menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+menuitem {
+}
+
+meta {
+}
+
+meter {
+}
+
+nav {
+}
+
+noscript {
+}
+
+object {
+}
+
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+optgroup {
+}
+
+option {
+}
+
+output {
+	display: block;
+}
+
+p {
+	margin: 0;
+}
+
+param {
+}
+
+picture {
+}
+
+pre {
+	margin: 0;
+}
+
+progress {
+}
+
+q {
+	display: block;
+}
+
+q::before {
+}
+
+q::after {
+}
+
+rp {
+}
+
+rt {
+}
+
+ruby {
+}
+
+s {
+}
+
+samp {
+}
+
+script {
+}
+
+section {
+}
+
+select {
+}
+
+small {
+}
+
+source {
+}
+
+span {
+}
+
+strike {
+}
+
+strong {
+}
+
+style {
+}
+
+sub {
+	font-size: normal;
+}
+
+summary {
+}
+
+sup {
+	font-size: normal;
+}
+
+table {
+}
+
+tbody {
+	vertical-align: none;
+}
+
+td {
+}
+
+template {
+}
+
+textarea {
+}
+
+tfoot {
+	vertical-align: none;
+}
+
+th {
+	font-weight: normal;
+	text-align: none;
+}
+
+thead {
+	vertical-align: none;
+}
+
+time {
+}
+
+title {
+}
+
+tr {
+}
+
+track {
+}
+
+u {
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+var {
+	font-style: none;
+}
+
+video {
+}
+
+wbr {
+}

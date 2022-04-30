@@ -26,8 +26,6 @@
 </div>
 
 <style>
-	@import '/src/shared/css/base.css';
-
 	.footer-link {
 		min-width: 8rem;
 		min-height: 3rem;

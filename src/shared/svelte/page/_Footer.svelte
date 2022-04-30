@@ -1,7 +1,13 @@
 <script>
 	import NavLink from './_NavLink.svelte'
+	import Hyperlink from '/src/shared/svelte/Hyperlink.svelte'
 
 	const upTriangle = '&#9650;'
+
+	const bloodyStupidJohnson = {
+		href: "https://wiki.lspace.org/Bergholt_Stuttley_Johnson",
+		text: "© 2022 Bloody Stupid Johnson",
+	}
 </script>
 
 <footer id="footer" class="footer">
@@ -10,16 +16,18 @@
 		<NavLink href="/">Home</NavLink>
 		<NavLink href="/tutorial">Tutorial</NavLink>
 	</nav>
-	<div class="base-nav-link-text pb-2">© 2022 Bloody Stupid Johnson</div>
+	<Hyperlink classes="white-link" to={bloodyStupidJohnson}/>
 </footer>
 
 <style>
 	.footer {
 		width: 100%;
-		@apply bg-gray-900;
+		background-color: var(--dark-gray);
 
 		color: white;
 		text-align: center;
+
+		padding-bottom: 1rem;
 	}
 
 	.nav-links {
@@ -29,5 +37,9 @@
 
 		margin: 0 2rem;
 		padding: 0.5rem;
+	}
+
+	:global(a:link.white-link) {
+		color: white;
 	}
 </style>
