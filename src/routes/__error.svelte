@@ -7,7 +7,7 @@
 </script>
 
 <script>
-	import Body from '/src/shared/svelte/page/Body.svelte'
+	import Body from '/src/pages/body/Body.svelte'
 
 	export let status
 	export let error

@@ -1,5 +1,5 @@
 <script>
-	import NavLink from './_NavLink.svelte'
+	import NavLink from './NavLink.svelte'
 	import { page } from '$app/stores'
 
 	const parentOf = (path) => {

@@ -1,8 +1,11 @@
 <script>
-	import Header from './_Header.svelte'
-	import Footer from './_Footer.svelte'
+	import Header from './Header.svelte'
+	import Footer from './Footer.svelte'
 
 	export let title = null
+	
+	export let noheader = false
+	export let nofooter = false
 
 	export let outer = '' // Classes
 	export let inner = '' // Classes
@@ -38,7 +41,9 @@
 </svelte:head>
 
 <div class="page-layout">
-	<Header />
+	{#if !noheader}
+		<Header />
+	{/if}
 	<div class="main-layout {outer}" class:left class:center class:right>
 		<main
 			class="main {inner}"
@@ -55,7 +60,9 @@
 			<slot />
 		</main>
 	</div>
-	<Footer />
+	{#if !nofooter}
+		<Footer />
+	{/if}
 </div>
 
 <style>

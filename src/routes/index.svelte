@@ -1,5 +1,5 @@
 <script>
-	import Body from '/src/shared/svelte/page/Body.svelte'
+	import Body from '/src/pages/body/Body.svelte'
 	import Hyperlink from '/src/shared/svelte/Hyperlink.svelte'
 
 	const title = 'A Sveltekit Template'

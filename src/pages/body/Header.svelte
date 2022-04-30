@@ -1,6 +1,6 @@
 <script>
-	import NavLink from './_NavLink.svelte'
-	import Breadcrumbs from './_Breadcrumbs.svelte'
+	import NavLink from './NavLink.svelte'
+	import Breadcrumbs from './Breadcrumbs.svelte'
 	import { page } from '$app/stores'
 
 	const downTriangle = '&#9660;'

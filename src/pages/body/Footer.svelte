@@ -1,5 +1,5 @@
 <script>
-	import NavLink from './_NavLink.svelte'
+	import NavLink from './NavLink.svelte'
 	import Hyperlink from '/src/shared/svelte/Hyperlink.svelte'
 
 	const upTriangle = '&#9650;'
