@@ -3,7 +3,7 @@
 	import Footer from './Footer.svelte'
 
 	export let title = null
-	
+
 	export let noheader = false
 	export let nofooter = false
 
