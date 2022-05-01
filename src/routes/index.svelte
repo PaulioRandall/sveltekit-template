@@ -1,5 +1,5 @@
 <script>
-	import Body from '/src/pages/body/Body.svelte'
+	import GenericPage from '/src/pages/GenericPage.svelte'
 	import Hyperlink from '/src/shared/svelte/Hyperlink.svelte'
 
 	const title = 'A Sveltekit Template'
@@ -9,9 +9,7 @@
 	const tutorialPage = { href: '/tutorial', text: 'tutorial page' }
 </script>
 
-<Body title="{title}">
-	<h1 class="default-page-heading">{title}</h1>
-
+<GenericPage title="{title}">
 	<p class="default-text">
 		A <Hyperlink to="{sveltekit}" /> template with <Hyperlink to="{prettier}" />
 		setup. Also includes an easy to edit header and footer for decoration when rapid
@@ -21,4 +19,4 @@
 	<p class="default-text">
 		Take a look at the <Hyperlink to="{tutorialPage}" />.
 	</p>
-</Body>
+</GenericPage>
