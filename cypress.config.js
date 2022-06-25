@@ -5,7 +5,6 @@ export default defineConfig({
 	screenshotOnRunFailure: false,
 	failOnStatusCode: false,
 	e2e: {
-		baseUrl: 'http://localhost:4000',
 		supportFile: false,
 	},
 })

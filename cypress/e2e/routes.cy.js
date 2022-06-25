@@ -1,16 +1,14 @@
-const base = 'http://localhost:4000'
-const URL = (path) => `${base}${path}`
+const URL = (path) => `http://localhost:4000${path}`
 
-const testForStatus = (path, status) => {
-	return cy
+const testForStatus = (path, status) =>
+	cy
 		.request({
-			url: `${base}${path}`,
+			url: URL(path),
 			failOnStatusCode: false,
 		})
 		.then((res) => {
 			expect(res.status).equal(status)
 		})
-}
 
 const routes = [
 	{ path: '/', status: 200 },
@@ -19,7 +17,7 @@ const routes = [
 	{ path: '/error', status: 404 },
 ]
 
-describe('All paths return correct status', () => {
+describe('Hitting all routes returns correct status', () => {
 	for (const r of routes) {
 		it(r.path, () => testForStatus(r.path, r.status))
 	}

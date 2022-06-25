@@ -63,7 +63,10 @@ export async function handle({ event, resolve }) {
 	event.locals.dessert = 'Cheesecake'
 	event.locals.secret = 'Maple syrup'
 
-	return resolve(event)
+	const res = await resolve(event)
+
+	res.headers.set('X-Clacks-Overhead', 'GNU Terry Pratchet')
+	return res
 }
 
 // getSession returns session data that is available client side within
@@ -174,7 +177,7 @@ export function getSession(event) {
 //
 export async function handleError({ error, event }) {
 	console.log(event.url.pathname, '- handleError({ error, event })')
-	console.log(event, error)
+	console.log(error)
 }
 
 // externalFetch allows you to intercept server side fetch requests such as
@@ -194,13 +197,6 @@ export async function handleError({ error, event }) {
 //
 export async function externalFetch(request) {
 	console.log(event.url.pathname, '- externalFetch(request)')
-
-	const newRequest = new Request(request, {
-		headers: {
-			...request.headers,
-			'X-Clacks-Overhead': 'GNU Terry Pratchet',
-		},
-	})
-
+	request.headers.set('X-Clacks-Overhead', 'GNU Terry Pratchet')
 	return fetch(newRequest)
 }
