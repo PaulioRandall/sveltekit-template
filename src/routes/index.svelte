@@ -35,7 +35,9 @@
 	<div slot="intro" class="intro">
 		<p class="generic-text">
 			A <A classes="underlined" href="https://kit.svelte.dev/">Sveltekit</A> template
-			with <A classes="underlined" href="https://prettier.io/">Prettier</A>
+			with <A classes="underlined" href="https://prettier.io/">Prettier</A> and <A
+				classes="underlined"
+				href="https://jestjs.io/">Jest</A>
 			setup.
 		</p>
 		<div class="menu-type" on:click|preventDefault="{switchMenuType}">
