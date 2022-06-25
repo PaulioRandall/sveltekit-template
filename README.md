@@ -1,6 +1,6 @@
 # Sveltekit Template
 
-A [Sveltekit](https://kit.svelte.dev/) project template with [Prettier](https://prettier.io/) and [Jest](https://jestjs.io/) setup.
+A [Sveltekit](https://kit.svelte.dev/) project template with [Prettier](https://prettier.io/), [Jest](https://jestjs.io/), and [Cypress](https://www.cypress.io/) setup ready to go.
 
 ## New project
 

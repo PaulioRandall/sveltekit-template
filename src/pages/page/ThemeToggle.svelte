@@ -1,13 +1,10 @@
 <script>
 	import { onMount } from 'svelte'
-	import { theme } from './theme-store.js'
+	import { theme, isLight, isDark, LIGHT, DARK } from './theme-store.js'
 
 	// TODO: Support for JS disabled?
 
-	const LIGHT = 'theme-light'
-	const DARK = 'theme-dark'
-
-	const oppositeOf = (mode) => (mode === DARK ? LIGHT : DARK)
+	const oppositeOf = (mode) => (isDark(mode) ? LIGHT : DARK)
 
 	onMount(async () => {
 		if (!$theme) {
@@ -28,7 +25,7 @@
 
 <div class="theme-toggle">
 	<button class="btn" on:click|stopPropagation="{switchTheme}">
-		{#if $theme === LIGHT}
+		{#if isLight($theme)}
 			<img
 				class="img"
 				src="/images/theme-light.svg"

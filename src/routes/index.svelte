@@ -1,5 +1,6 @@
 <script>
 	import MenuPage from '/src/pages/MenuPage.svelte'
+	import { theme, isDark } from '/src/pages/page/theme-store.js'
 	import A from '/src/shared/svelte/A.svelte'
 
 	const menuItems = [
@@ -29,19 +30,25 @@
 		menuType = other()
 		otherType = other()
 	}
+
+	$: fingerRight = isDark($theme) ? '👉🏻' : '👉🏾'
+	$: fingerLeft = isDark($theme) ? '👈🏻' : '👈🏾'
 </script>
 
 <MenuPage type="{menuType}" title="A Sveltekit Template" items="{menuItems}">
 	<div slot="intro" class="intro">
 		<p class="generic-text">
 			A <A classes="underlined" href="https://kit.svelte.dev/">Sveltekit</A> template
-			with <A classes="underlined" href="https://prettier.io/">Prettier</A> and <A
+			with <A classes="underlined" href="https://prettier.io/">Prettier</A>, <A
 				classes="underlined"
-				href="https://jestjs.io/">Jest</A>
-			setup.
+				href="https://jestjs.io/">Jest</A
+			>, and <A classes="underlined" href="https://www.cypress.io/">Cypress</A>
+			setup ready to go.
 		</p>
 		<div class="menu-type" on:click|preventDefault="{switchMenuType}">
+			{fingerRight}
 			Switch to {otherType} View
+			{fingerLeft}
 		</div>
 	</div>
 </MenuPage>
