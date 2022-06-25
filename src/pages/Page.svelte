@@ -1,8 +1,8 @@
 <script>
-	import Header from './Header.svelte'
-	import Footer from './Footer.svelte'
+	import Header from './page/Header.svelte'
+	import Footer from './page/Footer.svelte'
 
-	export let title = null
+	export let title = ''
 
 	export let noheader = false
 	export let nofooter = false
@@ -32,26 +32,25 @@
 </script>
 
 <svelte:head>
-	{#if title}
-		<title>{title}</title>
-	{/if}
 	{#if buildDate}
 		<meta name="build-date" content="{buildDate}" />
 	{/if}
+	{#if title}
+		<title>{title}</title>
+	{/if}
 </svelte:head>
 
-<div class="page-layout">
+<div class="page">
 	{#if !noheader}
 		<Header />
 	{/if}
-	<div class="main-layout {outer}" class:left class:center class:right>
+	<div class="layout {outer}" class:left class:center class:right>
 		<main
 			class="main {inner}"
 			class:slim
 			class:mean
 			class:wide
 			class:vast
-			class:fill
 			class:pad1
 			class:pad2
 			class:pad3
@@ -66,17 +65,15 @@
 </div>
 
 <style>
-	.page-layout {
+	.page {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
 		min-height: 100vh;
-
-		overflow: hidden;
 	}
 
-	.main-layout {
+	.layout {
 		flex-grow: 1;
 
 		display: flex;
@@ -113,24 +110,21 @@
 		align-content: center;
 	}
 
-	@media screen and (min-width: 40rem) {
+	@media screen and (min-width: 600px) {
 		.slim {
-			max-width: 40rem;
+			max-width: 600px;
 		}
 
 		.mean {
-			max-width: 52rem;
+			max-width: 900px;
 		}
 
 		.wide {
-			max-width: 64rem;
+			max-width: 1200px;
 		}
 
 		.vast {
-			max-width: 80rem;
-		}
-
-		.fill {
+			max-width: 1600px;
 		}
 
 		.left {

@@ -174,7 +174,7 @@ export function getSession(event) {
 //
 export async function handleError({ error, event }) {
 	console.log(event.url.pathname, '- handleError({ error, event })')
-	log(event, error)
+	console.log(event, error)
 }
 
 // externalFetch allows you to intercept server side fetch requests such as

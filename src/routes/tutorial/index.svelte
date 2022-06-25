@@ -6,7 +6,7 @@
 </script>
 
 <GenericPage title="{title}">
-	<p class="default-text">
+	<p class="generic-text">
 		I used the following tutorial as a guide to building the initial version of
 		this template. Worth a watch if you're unfamiliar with Sveltekit.
 	</p>

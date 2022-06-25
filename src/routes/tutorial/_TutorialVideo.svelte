@@ -1,9 +1,5 @@
 <script>
 	export let youtubeId
-
-	if (!youtubeId) {
-		throw new Error('You forgot to provide a Youtube video ID!')
-	}
 </script>
 
 <div class="video">

@@ -14,6 +14,17 @@
 </script>
 
 <GenericPage slim title="{status}">
-	<h1 class="default-page-heading">Error: {status}</h1>
-	<p class="default-text">{error.message}</p>
+	<div class="error-page">
+		<p class="generic-text">{error.message}</p>
+	</div>
 </GenericPage>
+
+<style>
+	@import './__styles.css';
+
+	.error-page {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+</style>

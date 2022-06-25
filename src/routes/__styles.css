@@ -1,0 +1,114 @@
+:root {
+	/* https://utopia.fyi/ */
+	--font-size-xs: clamp(0.74rem, calc(0.73rem + 0.04vw), 0.77rem);
+	--font-size-sm: clamp(0.89rem, calc(0.85rem + 0.18vw), 1.03rem);
+	--font-size-md: clamp(1.06rem, calc(0.98rem + 0.39vw), 1.38rem);
+	--font-size-lg: clamp(1.25rem, calc(1.19rem + 0.31vw), 1.5rem);
+	--font-size-xl: clamp(1.5rem, calc(1.41rem + 0.47vw), 1.88rem);
+	--font-size-2xl: clamp(1.8rem, calc(1.66rem + 0.68vw), 2.34rem);
+	--font-size-3xl: clamp(2.16rem, calc(1.97rem + 0.96vw), 2.93rem);
+	--font-size-4xl: clamp(2.59rem, calc(2.32rem + 1.34vw), 3.66rem);
+	--font-size-5xl: clamp(3.11rem, calc(2.74rem + 1.83vw), 4.58rem);
+	--font-size-huge: clamp(3.73rem, calc(3.24rem + 2.49vw), 5.72rem);
+
+	--white: #ffffff;
+	--black: #000000;
+}
+
+:root,
+:root body.theme-dark {
+	--rgb-base: 5, 10, 35;
+	--color-base: rgb(var(--rgb-base));
+	--color-base-offset: rgb(40, 40, 40);
+
+	--rgb-interactive: 150, 200, 255;
+	--color-interactive: rgb(var(--rgb-interactive));
+	--lucid-interactive: rgba(var(--rgb-interactive), 0.65);
+
+	--rgb-rebel: 255, 145, 145;
+	--color-rebel: rgb(var(--rgb-rebel));
+	--lucid-rebel: rgba(var(--rgb-rebel), 0.65);
+
+	--rgb-text: 231, 245, 255;
+	--color-text: rgb(var(--rgb-text));
+
+	--rgb-forsaken: 105, 105, 105;
+	--color-forsaken: rgb(var(--rgb-forsaken));
+	--lucid-forsaken: rgba(var(--rgb-forsaken), 0.5);
+
+	--rgb-shadow: 196, 195, 195;
+	--color-shadow: rgb(var(--rgb-shadow));
+	--lucid-shadow: rgba(var(--rgb-shadow), 0.5);
+}
+
+:root body.theme-light {
+	--rgb-base: 255, 255, 255;
+	--color-base: rgb(var(--rgb-base));
+	--color-base-offset: rgb(230, 230, 250);
+
+	--rgb-interactive: 140, 23, 23;
+	--color-interactive: rgb(var(--rgb-interactive));
+	--lucid-interactive: rgba(var(--rgb-interactive), 0.65);
+
+	--rgb-rebel: 0, 0, 128;
+	--color-rebel: rgb(var(--rgb-rebel));
+	--lucid-rebel: rgba(var(--rgb-rebel), 0.65);
+
+	--rgb-text: 11, 19, 43;
+	--color-text: rgb(var(--rgb-text));
+
+	--rgb-forsaken: 196, 195, 195;
+	--color-forsaken: rgb(var(--rgb-forsaken));
+	--lucid-forsaken: rgba(var(--rgb-forsaken), 0.5);
+
+	--rgb-shadow: 105, 105, 105;
+	--color-shadow: rgb(var(--rgb-shadow));
+	--lucid-shadow: rgba(var(--rgb-shadow), 0.5);
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	border: 0 solid transparent;
+}
+
+body {
+	background-color: var(--color-base);
+
+	padding: 0;
+	margin: 0;
+
+	color: var(--color-text);
+	font-size: var(--font-size-md);
+	line-height: 1.5;
+	text-size-adjust: 100%;
+	tab-size: 2;
+}
+
+body,
+body * {
+	transition-property: background-color, color, border, box-shadow, stroke;
+	transition-duration: 1s;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+	color: var(--color-interactive);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.generic-page-heading {
+	margin-bottom: 1rem;
+
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.generic-text {
+	margin-bottom: 1rem;
+	text-align: justify;
+}
