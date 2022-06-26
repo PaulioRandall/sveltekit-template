@@ -1,5 +1,5 @@
 <script>
-	import ThemeToggle from './ThemeToggle.svelte'
+	import ThemeToggle from './_ThemeToggle.svelte'
 	import Nav from '/src/shared/svelte/Nav.svelte'
 </script>
 

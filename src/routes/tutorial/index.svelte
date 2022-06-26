@@ -1,5 +1,5 @@
 <script>
-	import GenericPage from '/src/pages/GenericPage.svelte'
+	import GenericPage from '/src/shared/pages/GenericPage.svelte'
 	import TutorialVideo from './_TutorialVideo.svelte'
 
 	const title = 'Tutorial'

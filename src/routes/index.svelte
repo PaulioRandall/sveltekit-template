@@ -1,6 +1,6 @@
 <script>
-	import MenuPage from '/src/pages/MenuPage.svelte'
-	import { theme, isDark } from '/src/pages/page/theme-store.js'
+	import MenuPage from '/src/shared/pages/MenuPage.svelte'
+	import { theme, isDark } from '/src/shared/js/theme-store.js'
 	import A from '/src/shared/svelte/A.svelte'
 
 	const menuItems = [

@@ -26,6 +26,10 @@
 		"behave:start": "svelte-kit build && svelte-kit preview --port 4000",
 		"behave:test": "cypress run --headless -b electron",
 		"behave": "start-server-and-test \"npm run behave:start\" http://localhost:4000 \"npm run behave:test\"",
+		"___GIT___": "",
+		"commit:check": "npm run clean && npm run check",
+		"commit:test": "npm run test && npm run behave",
+		"commit": "npm run commit:check && npm run commit:test && git status",
 		"___AUTOMATE___": "",
 		"auto:build": "npm run build",
 		"auto:test": "npm run test && npm run behave"

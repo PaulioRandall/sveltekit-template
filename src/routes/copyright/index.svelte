@@ -1,5 +1,5 @@
 <script>
-	import GenericPage from '/src/pages/GenericPage.svelte'
+	import GenericPage from '/src/shared/pages/GenericPage.svelte'
 	import A from '/src/shared/svelte/A.svelte'
 </script>
 

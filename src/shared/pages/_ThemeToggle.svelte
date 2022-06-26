@@ -1,6 +1,12 @@
 <script>
 	import { onMount } from 'svelte'
-	import { theme, isLight, isDark, LIGHT, DARK } from './theme-store.js'
+	import {
+		theme,
+		isLight,
+		isDark,
+		LIGHT,
+		DARK,
+	} from '/src/shared/js/theme-store.js'
 
 	// TODO: Support for JS disabled?
 
