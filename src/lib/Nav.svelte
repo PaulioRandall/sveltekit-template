@@ -12,14 +12,14 @@
 
 <div class="nav">
 	<a
-		class:draft
+		class:draft="{draft}"
 		href="{href}"
 		sveltekit:noscroll
 		sveltekit:prefetch
 		class="link"
-		class:dotAbove
-		class:dotBelow
-		class:side
+		class:dotAbove="{dotAbove}"
+		class:dotBelow="{dotBelow}"
+		class:side="{side}"
 		on:click="{onClick}">
 		<slot />
 	</a>

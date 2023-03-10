@@ -1,10 +1,8 @@
 <script>
-	import ThemeToggle from './_ThemeToggle.svelte'
-	import Nav from '/src/shared/svelte/Nav.svelte'
+	import Nav from '$shared/Nav.svelte'
 </script>
 
 <header id="header" class="header">
-	<ThemeToggle />
 	<div class="nav-pane">
 		<div class="nav">
 			<Nav dotAbove href="/">Home</Nav>
