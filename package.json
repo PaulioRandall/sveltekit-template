@@ -13,8 +13,9 @@
 	"scripts": {
 		"clean": "rm -rf .svelte-kit .vercel",
 		"fmt": "npx prettier --loglevel warn --write --plugin-search-dir=. .",
+		"prebuild": "./scripts/build-env.sh",
 		"build": "npm run fmt && vite build",
-		"dev": "npm run fmt && vite dev --port 3000",
+		"dev": "npm run prebuild && npm run fmt && vite dev --port 3000",
 		"preview": "npm run build && vite preview --port 3000",
 		"===========================#===========================": "",
 		"check": "jsonlint -qd ./src && jsonlint -qd ./static",
@@ -27,8 +28,7 @@
 		"commit": "npm run build && npm run test && npm run behave && cat ./scripts/well-done.txt",
 		"=========================#=#=#=========================": "",
 		"auto:build": "npm run build",
-		"auto:test": "npm run test",
-		"TODO": "How to get Cypress to work with Vercel?"
+		"auto:test": "npm run test"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "2.0.0",
