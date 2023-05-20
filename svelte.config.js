@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-auto'
-import importAssets from 'svelte-preprocess-import-assets'
+import { importAssets } from 'svelte-preprocess-import-assets'
 import path from 'path'
 
 export default {
