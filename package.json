@@ -30,15 +30,15 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "2.1.0",
-		"@sveltejs/kit": "1.18.0",
-		"cypress": "12.12.0",
+		"@sveltejs/kit": "1.20.2",
+		"cypress": "12.13.0",
 		"jest": "29.5.0",
 		"jsonlint-dir": "1.7.0",
 		"prettier": "2.8.8",
-		"prettier-plugin-svelte": "2.10.0",
+		"prettier-plugin-svelte": "2.10.1",
 		"start-server-and-test": "2.0.0",
 		"svelte": "3.59.1",
-		"vite": "4.3.8"
+		"vite": "4.3.9"
 	},
 	"dependencies": {
 		"svelte-preprocess-import-assets": "1.0.0"
